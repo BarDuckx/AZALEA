@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный салон AZALEA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link href="/img/icon.png" rel="icon">
+    <link href="/CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="position-fixed top-0 start-0 w-100 bg-white bg-opacity-75 backdrop-blur z-index-10 py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Логотип -->
+            <img src="/img/logo.png" alt="Логотип" class="img-fluid" style="max-width: 10%; height: auto;">
+
+            <!-- Бургер-меню -->
+            <button class="navbar-toggler d-lg-none ms-auto" type="button" id="navbar-toggler" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Навигация -->
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="#block_2">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="#bouquet_catalog">Букеты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="#">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="#block_4">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="login.html">Авторизация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex align-items-center fw-bold" href="cart.html">
+                                Корзина <span id="cart-count" class="ms-2">(0)</span>
+                                <img src="/img/cart.svg" alt="Корзина" class="ms-2" style="width: 25px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Скрытое меню (для планшетов и мобильных устройств) -->
+    <div id="side-menu" class="side-menu d-none">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#block_2">О нас</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#bouquet_catalog">Букеты</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Блог</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#block_4">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Авторизация</a></li>
+            <li class="nav-item"><a class="nav-link text-dark d-flex align-items-center fw-bold" href="cart.html">
+                    Корзина
+                    <img src="/img/cart.svg" alt="Корзина" class="ms-2" style="width: 25px;">
+                </a></li>
+        </ul>
+    </div>
+
+    <!-- Content Block -->
+    <div id="block_1" class="block_1 d-flex flex-column justify-content-center align-items-start text-start">
+        <div class="container text-white">
+            <h1 class="main_title">ЦВЕТОЧНЫЙ <span>САЛОН</span></h1>
+            <h2 class="sec_title">a bouquet of love</h2>
+            <h3 class="sub_title">Азалия - где цветы <span>говорят за вас</span></h3>
+            <div class="mt-4 mb-3">
+                <a href="#bouquet_catalog" class="btn btn-primary purchase me-3">Покупка</a>
+                <a href="#block_2" class="btn btn-outline-secondary more">Подробнее</a>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 end-0 mb-5 me-5 info_title">
+            *Сборный <span>букет</span>
+        </div>
+    </div>
+
+    <!-- Content Block 2 -->
+    <div id="block_2" class="block_2 d-flex flex-column justify-content-center align-items-start text-start">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <!-- Центрированный блок block_2_info, вынесенный наружу -->
+                <div class="row justify-content-center mb-4"> <!-- Центрируем по горизонтали -->
+                    <h2 class="block_2_info">Получите скидку на свою <span>первую покупку</span></h2>
+                </div>
+                <!-- Левая часть с изображением -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Картинка с отступом для сдвига влево и вниз -->
+                    <img src="/img/B2.png" alt="Описание изображения" class="img-fluid block_2_image">
+                </div>
+
+                <!-- Правая часть с заголовками и текстом -->
+                <div class="col-6 col-md-4">
+                    <h2 class="block_2_title">О нас</h2>
+                    <p class="block_2_text">Наш цветочный салон - это место, где каждый букет становится произведением
+                        искусства. Мы собираем нежные цветы в утонченные композиции, чтобы подарить вам радость и
+                        вдохновение. В нашем салоне цветов царит атмосфера тепла и уюта, где каждый клиент ощущает
+                        заботу и внимание к его пожеланиям. Доверьтесь нам, и мы поможем воплотить ваши самые заветные
+                        цветочные мечты в жизнь.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Block 3 -->
+    <!-- Каталог букетов -->
+    <div id="bouquet_catalog" class="container my-5">
+        <h2 class="text-center mb-4">БУКЕТЫ</h2>
+        <div class="row">
+            <!-- Первая карточка -->
+            <div class="col-12 mb-4">
+                <div class="card d-flex flex-row">
+                    <img src="/img/bouquet_1.png" class="card-img-left img-fluid" alt="Букет 1"
+                        style="max-width: 40%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Бургундская роза и гвоздика</h5>
+                        <p class="card-text">Цена: 2399 руб.</p>
+                        <p class="card-text">В букете использованы белые и пурпурные розы, красный гиперикум и ветви
+                            эвкалипта Baby Blue. По желанию вы можете добавить стандартную или подарочную упаковку к
+                            заказу.</p>
+                        <button class="btn btn-primary buy-button" data-id="1" data-name="Бургундская роза и гвоздика"
+                            data-price="2399">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вторая карточка -->
+            <div class="col-12 mb-4">
+                <div class="card d-flex flex-row flex-row-reverse">
+                    <img src="/img/bouquet_2.png" class="card-img-right img-fluid" alt="Букет 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Кремовая роза и ромашка</h5>
+                        <p class="card-text">Цена: 1999 руб.</p>
+                        <p class="card-text">Этот небольшой букет состоит из кремовых роз, полевых ромашек, эвкалипта
+                            Baby Blue и белой вероники. По желанию вы можете добавить стандартную или подарочную
+                            упаковку к заказу.</p>
+                        <button class="btn btn-primary buy-button" data-id="2" data-name="Кремовая роза и ромашка"
+                            data-price="1999">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Третья карточка -->
+            <div class="col-12 mb-4">
+                <div class="card d-flex flex-row">
+                    <img src="/img/bouquet_3.png" class="card-img-left img-fluid" alt="Букет 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Розовая роза и гвоздика</h5>
+                        <p class="card-text">Цена: 2499 руб.</p>
+                        <p class="card-text">Этот букет состоит из нежных розовых роз, вероники, гвоздики, альстромерии
+                            и амми. По желанию вы можете добавить стандартную или подарочную упаковку к заказу.</p>
+                        <button class="btn btn-primary buy-button" data-id="3" data-name="Розовая роза и гвоздика"
+                            data-price="2499">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Четвертая карточка -->
+            <div class="col-12 mb-4">
+                <div class="card d-flex flex-row flex-row-reverse">
+                    <img src="/img/bouquet_4.png" class="card-img-right img-fluid" alt="Букет 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Красная роза и амми</h5>
+                        <p class="card-text">Цена: 2999 руб.</p>
+                        <p class="card-text">Мощный красный цвет роз сбалансирован
+                            многогранным зеленым цветом орнитогалумов, гиперикума и розеточек амми. Букет выглядит очень
+                            изыскано. </p>
+                        <button class="btn btn-primary buy-button" data-id="4" data-name="Красная роза и амми"
+                            data-price="2999">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопка "Ещё" -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-secondary">Ещё</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Block 4 - Преимущества и Контакты -->
+    <div id="block_4" class="container my-5">
+        <!-- Заголовок и подзаголовок -->
+        <div class="text-center mb-5">
+            <h2 class="advantages-title text-center mb-4">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <h3 class="advantages-subtitle text-center mb-4">Каждый день мы создаем и экспериментируем, чтобы
+                <span>сделать наших клиентов счастливыми</span>
+            </h3>
+        </div>
+
+        <!-- 3 карточки с преимуществами -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-white bg-success h-100 rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Всегда свежие цветы</h5>
+                        <p class="card-text">Наши букеты будут вас радовать как минимум полторы недели.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card text-white bg-success h-100 rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Быстрая доставка</h5>
+                        <p class="card-text">Мы доставляем букеты в течение 3 часов после заказа.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card text-white bg-success h-100 rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Талантливые флористы</h5>
+                        <p class="card-text">Все наши флористы имеют многолетний опыт работы и хороший вкус.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div class="text-center mt-5">
+            <h3 class="advantages-title text-center mb-4">Контакты</h3>
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <p>+7 (800) 555-35-35</p>
+                    <p>azaleaflower@mail.ru</p>
+                    <p>Чита, ул. Бабушкина, 66</p>
+                    <div class="social-icons">
+                        <a href="https://vk.com" target="_blank" class="me-3">
+                            <img src="/img/vk.svg" alt="VK" style="width: 50px;">
+                        </a>
+                        <a href="https://viber.com" target="_blank" class="me-3">
+                            <img src="/img/viber.svg" alt="Viber" style="width: 50px;">
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="/img/youtube.svg" alt="YouTube" style="width: 50px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Картинка, которая должна прилегать к правому краю -->
+                    <div class="b4_image-wrapper">
+                        <img src="/img/B4_img.png" alt="Букет" class="b4_image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Block 5 - Форма обратной связи -->
+    <div id="block_5" class="container my-6">
+        <div class="row align-items-center">
+            <!-- Левая часть с изображением -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="/img/B5_img.png" alt="Букет" class="img-fluid">
+            </div>
+
+            <!-- Правая часть с формой -->
+            <div class="col-md-8">
+                <h2 class="advantages-title text-center mb-3">Подписывайтесь на <span>нашу новостную рассылку</span>
+                </h2>
+                <form id="contactForm" novalidate>
+                    <!-- Поле для имени -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required>
+                    </div>
+
+                    <!-- Поле для email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введите ваш email" required>
+                    </div>
+
+                    <!-- Поле для сообщения -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"
+                            required></textarea>
+                    </div>
+
+                    <!-- Кнопка отправки -->
+                    <button type="button" class="btn btn-primary" id="submitBtn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <!-- О нас -->
+                <div class="col-md-4 mb-4">
+                    <h5>О нас</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">История</a></li>
+                        <li><a href="#" class="text-white">Наша команда</a></li>
+                        <li><a href="#" class="text-white">Условия и положение</a></li>
+                        <li><a href="#" class="text-white">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+
+                <!-- Что мы делаем -->
+                <div class="col-md-4 mb-4">
+                    <h5>Что мы делаем</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Новости и истории</a></li>
+                        <li><a href="#" class="text-white">Публикации</a></li>
+                        <li><a href="#" class="text-white">Рекомендации</a></li>
+                        <li><a href="#" class="text-white">Помощь</a></li>
+                    </ul>
+                </div>
+
+                <!-- AZALEA -->
+                <div class="col-md-4 mb-4">
+                    <h5>AZALEA</h5>
+                    <ul class="list-unstyled">
+                        <li>Бабушкина 66, Чита</li>
+                        <li><a href="mailto:azaleaflower@mail.ru" class="text-white">azaleaflower@mail.ru</a></li>
+                    </ul>
+                    <div class="mt-3 d-flex align-items-center">
+                        <!-- Надпись "Follow us!" слева от иконок -->
+                        <h6 class="mb-0 me-3 text-white" style="font-family: 'Sacramento', cursive; font-size: 2rem;">
+                            Follow us!</h6>
+                        <div class="social-icons">
+                            <a href="https://vk.com" target="_blank" class="me-3">
+                                <img src="/img/vk.svg" alt="VK" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="https://viber.com" target="_blank" class="me-3">
+                                <img src="/img/viber.svg" alt="Viber" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="https://youtube.com" target="_blank">
+                                <img src="/img/youtube.svg" alt="YouTube" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвал -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Азалия. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
